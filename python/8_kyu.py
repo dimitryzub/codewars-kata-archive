@@ -643,6 +643,7 @@ def bmi(weight, height):
     else:
         return "Obese"
 
+
 # ---------------------------
 
 # Enumerable Magic #25 - Take the First N Elements
@@ -669,6 +670,7 @@ def domain_name(url):
 def simple_multiplication(number):
     return number * 8 if number % 2 == 0 else number * 9
 
+
 # --------------------------
 
 # Define a card suit
@@ -691,6 +693,7 @@ def define_suit(card):
     # or
     return {'C': 'clubs', 'S': 'spades', 'D': 'diamonds', 'H': 'hearts'}[card[-1]]
 
+
 # print(define_suit("3H"))
 
 # --------------------------
@@ -711,6 +714,7 @@ less_than_9 = lambda x: x < 9
 
 def all(seq, fun):
     return next((False for x in seq if not fun(x)), True)
+
 
 # print(all(1, 2, 3, 4, 5))
 
@@ -735,8 +739,65 @@ def first_non_consecutive(arr):
 # print(first_non_consecutive([1, 2, 3, 4, 6, 7, 8]))
 
 # --------------------------
+
 # Expressions Matter
 def expression_matter(a, b, c):
-    return max(a*b*c, a+b+c, (a+b)*c, a*(b+c))
+    return max(a * b * c, a + b + c, (a + b) * c, a * (b + c))
+
 
 # print(expression_matter(1,2,3))
+
+# -------------------------
+
+# Reversed sequence
+def reverse_seq(n):
+    return [_ for _ in range(1, n + 1)][::-1]
+
+    # or
+    # list(range(n, 0, -1))
+
+    # or
+    # return range(n, 0, -1)
+
+    # or
+    # return [x for x in range(n, 0, -1)]
+
+
+# print(reverse_seq(5))
+
+# ---------------------
+
+# Century From Year
+def century(year):
+    return (year + 99) // 100
+
+
+# print(century(1705))
+
+# ----------------------
+
+# Find Maximum and Minimum Values of a List
+def minimum(arr):
+    return min(arr)
+
+
+def maximum(arr):
+    return max(arr)
+
+
+# -----------------------
+
+# Correct the mistakes of the character recognition software
+def correct(s):
+    return s.replace("0", "O").replace("5", "S").replace("1", "I")
+
+
+# print(correct("L51ND0N"))
+
+# ----------------------
+
+# Double Char
+def double_char(s):
+    return ''.join([char * 2 for char in s])
+
+# print(double_char("Hello World"))
