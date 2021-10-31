@@ -1,2 +1,3 @@
-# codewars-katas-archive
-Personal Codewars (unstructured) kata solutions starting from 8 kyu 
+# Personal Codewars Kata Archive
+
+This repo is for personal Codewars kata solutions (_unstructured_) starting from 8 kyu 
