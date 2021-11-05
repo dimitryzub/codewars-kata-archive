@@ -800,4 +800,141 @@ def correct(s):
 def double_char(s):
     return ''.join([char * 2 for char in s])
 
+
 # print(double_char("Hello World"))
+
+
+# ------------------------
+
+# Is n divisible by x and y?
+def is_divisible(n, x, y):
+    return n % x == 0 and n % y == 0
+
+
+# print(is_divisible(100,5,3))
+
+
+# -------------------------
+
+# Find the Remainder
+def is_even(n):
+    return True if n % 2 == 0 else False
+
+
+# ---------------------------
+# Grasshopper - Basic Function Fixer
+def add_five(num):
+    return num + 5
+
+
+# -------------------------
+# Invert values
+def invert(lst):
+    return [-num for num in lst]
+
+
+# print(invert([1,2,3,4,5]))
+
+# ------------------------
+# Sum of positive
+def positive_sum(arr):
+    return sum(num for num in arr if num > 0)
+
+    # sum_list = []
+    #
+    # for i in arr:
+    #     if i > 0:
+    #         sum_list.append(i)
+
+    # return sum(sum_list)
+
+
+# print(positive_sum([-1,2,3,4,-5,3]))
+
+
+# ---------------------------
+# Switch it Up!
+def switch_it_up(number):
+    number_converter = {0: "Zero", 1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven",
+                        8: "Eight", 9: "Nine"}
+    return number_converter[number]
+
+    # dict = {
+    #     1: "One",
+    #     2: "Two",
+    #     3: "Three",
+    #     4: "Four",
+    #     5: "Five",
+    #     6: "Six",
+    #     7: "Seven",
+    #     8: "Eight",
+    #     9: "Nine",
+    #     0: "Zero"
+    # }
+    #
+    # return dict.get(number)
+
+    # if number == 0:
+    #     return "Zero"
+    # if number == 1:
+    #     return "One"
+    # if number == 2:
+    #     return "Two"
+    # if number == 3:
+    #     return "Three"
+    # if number == 4:
+    #     return "Four"
+    # if number == 5:
+    #     return "Five"
+    # if number == 6:
+    #     return "Six"
+    # if number == 7:
+    #     return "Seven"
+    # if number == 8:
+    #     return "Eight"
+    # if number == 9:
+    #     return "Nine"
+
+
+# print(switch_it_up(0))
+
+# -------------------------
+# Beginner - Lost Without a Map
+def maps(a):
+    return [num * 2 for num in a]
+
+
+# print(maps([1,2,3]))
+
+# -------------------------
+
+# Kata Example Twist
+websites = ["codewars" for _ in range(1000)]
+# or
+# websites = ["codewars"] * 1000
+
+
+# -----------------------
+
+# Thinkful - Dictionary drills: Order filler
+stock = {
+    'football': 4,
+    'boardgame': 10,
+    'leggos': 1,
+    'doll': 5
+}
+
+
+def fillable(stock, merch, n):
+    return True if merch in stock and stock[merch] >= n else False
+
+    # or
+    # return stock.get(merch, 0) >= n
+
+    # or
+    # try:
+    #     return stock[str] >= num
+    # except:
+    #     return False
+
+# print(fillable(stock, 'football', 6))
